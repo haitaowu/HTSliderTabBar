@@ -95,8 +95,6 @@
     [progressline setLineWidth:1.0];
     [progressline setLineCapStyle:kCGLineCapSquare];
     
-    
-    
     CABasicAnimation *pathAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     pathAnimation.duration = 1.0;
     pathAnimation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
