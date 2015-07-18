@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE9C8D0D1B508492005372BE /* HTSliderTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE9C8D0C1B508492005372BE /* HTSliderTabBarController.m */; };
 		BEEC32E31B506CE0008BFE44 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC32E21B506CE0008BFE44 /* main.m */; };
 		BEEC32E61B506CE0008BFE44 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC32E51B506CE0008BFE44 /* AppDelegate.m */; };
-		BEEC32E91B506CE0008BFE44 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC32E81B506CE0008BFE44 /* ViewController.m */; };
-		BEEC32EC1B506CE0008BFE44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEEC32EA1B506CE0008BFE44 /* Main.storyboard */; };
+		BEEC32E91B506CE0008BFE44 /* HTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC32E81B506CE0008BFE44 /* HTViewController.m */; };
 		BEEC32EE1B506CE0008BFE44 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEEC32ED1B506CE0008BFE44 /* Images.xcassets */; };
 		BEEC32F11B506CE0008BFE44 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEEC32EF1B506CE0008BFE44 /* LaunchScreen.xib */; };
 		BEEC32FD1B506CE0008BFE44 /* HTSliderTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC32FC1B506CE0008BFE44 /* HTSliderTabBarTests.m */; };
+		BEEC330F1B506E2B008BFE44 /* UIView+PositionExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC330E1B506E2B008BFE44 /* UIView+PositionExt.m */; };
+		BEEC33131B506F32008BFE44 /* HTSliderBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC33121B506F32008BFE44 /* HTSliderBarItem.m */; };
+		BEEC33161B507398008BFE44 /* HTSliderTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC33151B507398008BFE44 /* HTSliderTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,19 +30,27 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE9C8D0B1B508492005372BE /* HTSliderTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSliderTabBarController.h; sourceTree = "<group>"; };
+		BE9C8D0C1B508492005372BE /* HTSliderTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSliderTabBarController.m; sourceTree = "<group>"; };
 		BEEC32DD1B506CE0008BFE44 /* HTSliderTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTSliderTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEC32E11B506CE0008BFE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEEC32E21B506CE0008BFE44 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEEC32E41B506CE0008BFE44 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEEC32E51B506CE0008BFE44 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BEEC32E71B506CE0008BFE44 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BEEC32E81B506CE0008BFE44 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		BEEC32EB1B506CE0008BFE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEEC32E71B506CE0008BFE44 /* HTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTViewController.h; sourceTree = "<group>"; };
+		BEEC32E81B506CE0008BFE44 /* HTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTViewController.m; sourceTree = "<group>"; };
 		BEEC32ED1B506CE0008BFE44 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEEC32F01B506CE0008BFE44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		BEEC32F61B506CE0008BFE44 /* HTSliderTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTSliderTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEEC32FB1B506CE0008BFE44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEEC32FC1B506CE0008BFE44 /* HTSliderTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTSliderTabBarTests.m; sourceTree = "<group>"; };
+		BEEC330D1B506E2B008BFE44 /* UIView+PositionExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+PositionExt.h"; sourceTree = "<group>"; };
+		BEEC330E1B506E2B008BFE44 /* UIView+PositionExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+PositionExt.m"; sourceTree = "<group>"; };
+		BEEC33101B506E53008BFE44 /* HTSliderTabBarPrex.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTSliderTabBarPrex.pch; sourceTree = "<group>"; };
+		BEEC33111B506F32008BFE44 /* HTSliderBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSliderBarItem.h; sourceTree = "<group>"; };
+		BEEC33121B506F32008BFE44 /* HTSliderBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSliderBarItem.m; sourceTree = "<group>"; };
+		BEEC33141B507398008BFE44 /* HTSliderTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTSliderTabBar.h; sourceTree = "<group>"; };
+		BEEC33151B507398008BFE44 /* HTSliderTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTSliderTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +92,15 @@
 		BEEC32DF1B506CE0008BFE44 /* HTSliderTabBar */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC33061B506D51008BFE44 /* slidertabbar */,
 				BEEC32E41B506CE0008BFE44 /* AppDelegate.h */,
 				BEEC32E51B506CE0008BFE44 /* AppDelegate.m */,
-				BEEC32E71B506CE0008BFE44 /* ViewController.h */,
-				BEEC32E81B506CE0008BFE44 /* ViewController.m */,
-				BEEC32EA1B506CE0008BFE44 /* Main.storyboard */,
+				BEEC32E71B506CE0008BFE44 /* HTViewController.h */,
+				BEEC32E81B506CE0008BFE44 /* HTViewController.m */,
 				BEEC32ED1B506CE0008BFE44 /* Images.xcassets */,
 				BEEC32EF1B506CE0008BFE44 /* LaunchScreen.xib */,
 				BEEC32E01B506CE0008BFE44 /* Supporting Files */,
+				BEEC33101B506E53008BFE44 /* HTSliderTabBarPrex.pch */,
 			);
 			path = HTSliderTabBar;
 			sourceTree = "<group>";
@@ -117,6 +129,45 @@
 				BEEC32FB1B506CE0008BFE44 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEEC33061B506D51008BFE44 /* slidertabbar */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC33071B506D51008BFE44 /* category */,
+				BEEC33081B506D51008BFE44 /* controller */,
+				BEEC33091B506D51008BFE44 /* view */,
+			);
+			path = slidertabbar;
+			sourceTree = "<group>";
+		};
+		BEEC33071B506D51008BFE44 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC330D1B506E2B008BFE44 /* UIView+PositionExt.h */,
+				BEEC330E1B506E2B008BFE44 /* UIView+PositionExt.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		BEEC33081B506D51008BFE44 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				BE9C8D0B1B508492005372BE /* HTSliderTabBarController.h */,
+				BE9C8D0C1B508492005372BE /* HTSliderTabBarController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		BEEC33091B506D51008BFE44 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC33111B506F32008BFE44 /* HTSliderBarItem.h */,
+				BEEC33121B506F32008BFE44 /* HTSliderBarItem.m */,
+				BEEC33141B507398008BFE44 /* HTSliderTabBar.h */,
+				BEEC33151B507398008BFE44 /* HTSliderTabBar.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +214,7 @@
 		BEEC32D51B506CE0008BFE44 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = HT;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = taotao;
 				TargetAttributes = {
@@ -199,7 +251,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEC32EC1B506CE0008BFE44 /* Main.storyboard in Resources */,
 				BEEC32F11B506CE0008BFE44 /* LaunchScreen.xib in Resources */,
 				BEEC32EE1B506CE0008BFE44 /* Images.xcassets in Resources */,
 			);
@@ -219,7 +270,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEEC32E91B506CE0008BFE44 /* ViewController.m in Sources */,
+				BEEC33161B507398008BFE44 /* HTSliderTabBar.m in Sources */,
+				BEEC32E91B506CE0008BFE44 /* HTViewController.m in Sources */,
+				BEEC330F1B506E2B008BFE44 /* UIView+PositionExt.m in Sources */,
+				BEEC33131B506F32008BFE44 /* HTSliderBarItem.m in Sources */,
+				BE9C8D0D1B508492005372BE /* HTSliderTabBarController.m in Sources */,
 				BEEC32E61B506CE0008BFE44 /* AppDelegate.m in Sources */,
 				BEEC32E31B506CE0008BFE44 /* main.m in Sources */,
 			);
@@ -244,14 +299,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		BEEC32EA1B506CE0008BFE44 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BEEC32EB1B506CE0008BFE44 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BEEC32EF1B506CE0008BFE44 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -349,9 +396,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HTSliderTabBar/HTSliderTabBarPrex.pch";
 				INFOPLIST_FILE = HTSliderTabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -359,9 +409,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/HTSliderTabBar/HTSliderTabBarPrex.pch";
 				INFOPLIST_FILE = HTSliderTabBar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -418,6 +471,7 @@
 				BEEC33021B506CE0008BFE44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEEC33031B506CE0008BFE44 /* Build configuration list for PBXNativeTarget "HTSliderTabBarTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +480,7 @@
 				BEEC33051B506CE0008BFE44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

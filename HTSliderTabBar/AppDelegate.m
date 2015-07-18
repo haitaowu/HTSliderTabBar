@@ -7,6 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "HTViewController.h"
+#import "HTSliderTabBarController.h"
+#import "HTSliderBarItem.h"
+
+
+
+
 
 @interface AppDelegate ()
 
@@ -16,7 +23,32 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    HTSliderTabBarController *rootViewController = [[HTSliderTabBarController alloc] init];
+    //1 addSubChildController
+    HTViewController *controller = [[HTViewController alloc] init];
+    controller.view.backgroundColor = [UIColor whiteColor];
+    controller.sliderBarItem = [HTSliderBarItem sliderBarItemWithTitle:@"home" imageName:@"tabbar_home"];
+    controller.sliderBarItem.selectedImageName = @"tabbar_home_selected";
+    //2 addSubChildController
+    UIViewController *viewController = [[UIViewController alloc] init];
+    viewController.view.backgroundColor = [UIColor greenColor];
+    viewController.sliderBarItem = [HTSliderBarItem sliderBarItemWithTitle:@"msg" imageName:@"tabbar_message_center"];
+    viewController.sliderBarItem.selectedImageName = @"tabbar_message_center_selected";
+    
+    //3 addSubChildController
+    UIViewController *viewController3 = [[UIViewController alloc] init];
+    viewController3.view.backgroundColor = [UIColor blueColor];
+    viewController3.sliderBarItem = [HTSliderBarItem sliderBarItemWithTitle:@"profile" imageName:@"tabbar_profile"];
+    viewController3.sliderBarItem.selectedImageName = @"tabbar_profile_selected";
+    
+    [rootViewController addSLiderTabBarSubController:controller];
+    [rootViewController addSLiderTabBarSubController:viewController];
+    [rootViewController addSLiderTabBarSubController:viewController3];
+    
+    self.window.rootViewController = rootViewController;
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
